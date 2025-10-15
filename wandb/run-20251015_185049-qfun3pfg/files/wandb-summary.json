@@ -1,0 +1,1 @@
+{"num_tokens":11668,"_timestamp":1.7605545708708198e+09,"step":650,"train_loss":1.2116436958312988,"arc_easy_acc":0.2646484375,"val_loss":1.0673404932022095,"mmlu_acc":0.24609375,"humaneval_acc":0.015625,"_step":661,"gsm8k_acc":0.09375,"_wandb":{"runtime":322},"lrm":0.003072196620583667,"_runtime":322}

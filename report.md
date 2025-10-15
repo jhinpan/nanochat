@@ -159,6 +159,95 @@ timestamp: 2025-10-15 05:55:33
 - bigbench_language_identification: 0.1813
 
 
+## Midtraining
+timestamp: 2025-10-15 18:41:55
+
+- run: 
+- dtype: bfloat16
+- max_seq_len: 2048
+- device_batch_size: 32
+- unembedding_lr: 0.0040
+- embedding_lr: 0.2000
+- matrix_lr: 0.0200
+- init_lr_frac: 1.0000
+- weight_decay: 0.0000
+- final_lr_frac: 0.0000
+- eval_every: 150
+- eval_tokens: 10,485,760
+- total_batch_size: 524,288
+- Number of iterations: 765
+- DDP world size: 8
+- Minimum validation bpb: 0.4158
+
+
+## Chat evaluation mid
+timestamp: 2025-10-15 18:50:10
+
+- source: mid
+- task_name: None
+- dtype: bfloat16
+- temperature: 0.0000
+- max_new_tokens: 512
+- num_samples: 1
+- top_k: 50
+- batch_size: 8
+- model_tag: None
+- step: None
+- max_problems: None
+- ARC-Easy: 0.2601
+- ARC-Challenge: 0.2491
+- MMLU: 0.2305
+- GSM8K: 0.0311
+- HumanEval: 0.0366
+- ChatCORE metric: 0.0108
+
+
+## Chat SFT
+timestamp: 2025-10-15 18:56:13
+
+- run: 
+- source: mid
+- dtype: bfloat16
+- device_batch_size: 4
+- num_epochs: 1
+- max_iterations: -1
+- target_examples_per_step: 32
+- unembedding_lr: 0.0040
+- embedding_lr: 0.2000
+- matrix_lr: 0.0200
+- weight_decay: 0.0000
+- init_lr_frac: 0.0200
+- eval_every: 100
+- eval_steps: 100
+- eval_metrics_every: 200
+- Training rows: 20,843
+- Number of iterations: 651
+- Training loss: 1.2116
+- Validation loss: 1.0673
+
+
+## Chat evaluation sft
+timestamp: 2025-10-15 19:02:41
+
+- source: sft
+- task_name: None
+- dtype: bfloat16
+- temperature: 0.0000
+- max_new_tokens: 512
+- num_samples: 1
+- top_k: 50
+- batch_size: 8
+- model_tag: None
+- step: None
+- max_problems: None
+- ARC-Easy: 0.2529
+- ARC-Challenge: 0.2423
+- MMLU: 0.2514
+- GSM8K: 0.0478
+- HumanEval: 0.0305
+- ChatCORE metric: 0.0148
+
+
 ## Summary
 
 - Characters: 330,615
@@ -170,5 +259,11 @@ timestamp: 2025-10-15 05:55:33
 | Metric          | BASE     | MID      | SFT      | RL       |
 |-----------------|----------|----------|----------|----------|
 | CORE            | 0.2200   | -        | -        | -        |
+| ARC-Challenge   | -        | 0.2491   | 0.2423   | -        |
+| ARC-Easy        | -        | 0.2601   | 0.2529   | -        |
+| GSM8K           | -        | 0.0311   | 0.0478   | -        |
+| HumanEval       | -        | 0.0366   | 0.0305   | -        |
+| MMLU            | -        | 0.2305   | 0.2514   | -        |
+| ChatCORE        | -        | 0.0108   | 0.0148   | -        |
 
-Total wall clock time: 3h17m
+Total wall clock time: 16h24m

@@ -1,0 +1,26 @@
+2025-10-15 18:32:35,488 INFO    MainThread:2278469 [wandb_setup.py:_flush():81] Current SDK version is 0.21.3
+2025-10-15 18:32:35,488 INFO    MainThread:2278469 [wandb_setup.py:_flush():81] Configure stats pid to 2278469
+2025-10-15 18:32:35,488 INFO    MainThread:2278469 [wandb_setup.py:_flush():81] Loading settings from /root/.config/wandb/settings
+2025-10-15 18:32:35,488 INFO    MainThread:2278469 [wandb_setup.py:_flush():81] Loading settings from /sgl-workspace/nanochat/wandb/settings
+2025-10-15 18:32:35,488 INFO    MainThread:2278469 [wandb_setup.py:_flush():81] Loading settings from environment variables
+2025-10-15 18:32:35,488 INFO    MainThread:2278469 [wandb_init.py:setup_run_log_directory():686] Logging user logs to /sgl-workspace/nanochat/wandb/run-20251015_183235-md4wekyz/logs/debug.log
+2025-10-15 18:32:35,488 INFO    MainThread:2278469 [wandb_init.py:setup_run_log_directory():687] Logging internal logs to /sgl-workspace/nanochat/wandb/run-20251015_183235-md4wekyz/logs/debug-internal.log
+2025-10-15 18:32:35,488 INFO    MainThread:2278469 [wandb_init.py:init():813] calling init triggers
+2025-10-15 18:32:35,488 INFO    MainThread:2278469 [wandb_init.py:init():818] wandb.init called with sweep_config: {}
+config: {'run': '', 'dtype': 'bfloat16', 'max_seq_len': 2048, 'device_batch_size': 32, 'unembedding_lr': 0.004, 'embedding_lr': 0.2, 'matrix_lr': 0.02, 'init_lr_frac': 1.0, 'weight_decay': 0.0, 'final_lr_frac': 0.0, 'eval_every': 150, 'eval_tokens': 10485760, 'total_batch_size': 524288, '_wandb': {}}
+2025-10-15 18:32:35,488 INFO    MainThread:2278469 [wandb_init.py:init():854] starting backend
+2025-10-15 18:32:35,694 INFO    MainThread:2278469 [wandb_init.py:init():857] sending inform_init request
+2025-10-15 18:32:35,698 INFO    MainThread:2278469 [wandb_init.py:init():865] backend started and connected
+2025-10-15 18:32:35,700 INFO    MainThread:2278469 [wandb_init.py:init():936] updated telemetry
+2025-10-15 18:32:35,704 INFO    MainThread:2278469 [wandb_init.py:init():960] communicating run to backend with 90.0 second timeout
+2025-10-15 18:32:36,233 INFO    MainThread:2278469 [wandb_init.py:init():1011] starting run threads in backend
+2025-10-15 18:32:36,287 INFO    MainThread:2278469 [wandb_run.py:_console_start():2494] atexit reg
+2025-10-15 18:32:36,287 INFO    MainThread:2278469 [wandb_run.py:_redirect():2342] redirect: wrap_raw
+2025-10-15 18:32:36,287 INFO    MainThread:2278469 [wandb_run.py:_redirect():2411] Wrapping output streams.
+2025-10-15 18:32:36,287 INFO    MainThread:2278469 [wandb_run.py:_redirect():2434] Redirects installed.
+2025-10-15 18:32:36,289 INFO    MainThread:2278469 [wandb_init.py:init():1057] run started, returning control to user process
+2025-10-15 18:41:55,798 INFO    MainThread:2278469 [wandb_run.py:_finish():2260] finishing run jhinpan-university-of-michigan/nanochat-mid/md4wekyz
+2025-10-15 18:41:55,798 INFO    MainThread:2278469 [wandb_run.py:_atexit_cleanup():2459] got exitcode: 0
+2025-10-15 18:41:55,798 INFO    MainThread:2278469 [wandb_run.py:_restore():2441] restore
+2025-10-15 18:41:55,798 INFO    MainThread:2278469 [wandb_run.py:_restore():2447] restore done
+2025-10-15 18:41:56,290 INFO    MainThread:2278469 [wandb_run.py:_footer_sync_info():3855] logging synced files
