@@ -1,0 +1,14 @@
+{"time":"2025-10-15T05:56:51.712299962Z","level":"INFO","msg":"stream: starting","core version":"0.21.3"}
+{"time":"2025-10-15T05:56:52.034816535Z","level":"INFO","msg":"stream: created new stream","id":"mwoht00w"}
+{"time":"2025-10-15T05:56:52.034851431Z","level":"INFO","msg":"stream: started","id":"mwoht00w"}
+{"time":"2025-10-15T05:56:52.034871438Z","level":"INFO","msg":"sender: started","stream_id":"mwoht00w"}
+{"time":"2025-10-15T05:56:52.034870308Z","level":"INFO","msg":"writer: started","stream_id":"mwoht00w"}
+{"time":"2025-10-15T05:56:52.034889746Z","level":"INFO","msg":"handler: started","stream_id":"mwoht00w"}
+{"time":"2025-10-15T05:56:52.281149202Z","level":"WARN","msg":"handleCodeSave: program relative path is empty"}
+{"time":"2025-10-15T05:56:52.283462939Z","level":"ERROR","msg":"error generating diff","error":"no diff found"}
+{"time":"2025-10-15T05:56:52.286797393Z","level":"ERROR","msg":"error generating diff","error":"no diff found"}
+{"time":"2025-10-15T05:56:52.34531721Z","level":"INFO","msg":"stream: closing","id":"mwoht00w"}
+{"time":"2025-10-15T05:56:52.864810843Z","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-10-15T05:56:53.007914077Z","level":"INFO","msg":"handler: closed","stream_id":"mwoht00w"}
+{"time":"2025-10-15T05:56:53.008035525Z","level":"INFO","msg":"sender: closed","stream_id":"mwoht00w"}
+{"time":"2025-10-15T05:56:53.008044466Z","level":"INFO","msg":"stream: closed","id":"mwoht00w"}

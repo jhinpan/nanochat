@@ -1,0 +1,115 @@
+_wandb:
+    value:
+        cli_version: 0.21.3
+        e:
+            8tfab1f8bfq1ahd40emgaiv6yzxkj90j:
+                args:
+                    - --run=speedrun
+                cpu_count: 104
+                cpu_count_logical: 104
+                cudaVersion: "12.8"
+                disk:
+                    /:
+                        total: "470822744064"
+                        used: "445874057216"
+                email: jhinpan@umich.edu
+                executable: /sgl-workspace/nanochat/.venv/bin/python3
+                git:
+                    commit: dd6ff9a1cc23b38ce69ddc119fb220f9ee96cedd
+                    remote: git@github.com:jhinpan/nanochat.git
+                gpu: NVIDIA H100 80GB HBM3
+                gpu_count: 8
+                gpu_nvidia:
+                    - architecture: Hopper
+                      cudaCores: 16896
+                      memoryTotal: "85520809984"
+                      name: NVIDIA H100 80GB HBM3
+                      uuid: GPU-a5c2e793-424a-b73b-632a-a8552c4a6fc1
+                    - architecture: Hopper
+                      cudaCores: 16896
+                      memoryTotal: "85520809984"
+                      name: NVIDIA H100 80GB HBM3
+                      uuid: GPU-390e6156-e470-5e6c-f50b-19d7828382f0
+                    - architecture: Hopper
+                      cudaCores: 16896
+                      memoryTotal: "85520809984"
+                      name: NVIDIA H100 80GB HBM3
+                      uuid: GPU-03551e05-a275-cc81-bf0b-7559cb0ed626
+                    - architecture: Hopper
+                      cudaCores: 16896
+                      memoryTotal: "85520809984"
+                      name: NVIDIA H100 80GB HBM3
+                      uuid: GPU-4fbb176b-1eee-8c27-9367-b98f135e9536
+                    - architecture: Hopper
+                      cudaCores: 16896
+                      memoryTotal: "85520809984"
+                      name: NVIDIA H100 80GB HBM3
+                      uuid: GPU-dab2b141-bcbe-d004-e958-fcfbe816eefc
+                    - architecture: Hopper
+                      cudaCores: 16896
+                      memoryTotal: "85520809984"
+                      name: NVIDIA H100 80GB HBM3
+                      uuid: GPU-ae0e9899-a14f-6c9c-0a39-405e69e726ab
+                    - architecture: Hopper
+                      cudaCores: 16896
+                      memoryTotal: "85520809984"
+                      name: NVIDIA H100 80GB HBM3
+                      uuid: GPU-44e18591-f00c-64a0-b26c-59ff56807273
+                    - architecture: Hopper
+                      cudaCores: 16896
+                      memoryTotal: "85520809984"
+                      name: NVIDIA H100 80GB HBM3
+                      uuid: GPU-b179d957-7b43-ba52-feb8-55e2697b99d6
+                host: 3904066baa97
+                memory:
+                    total: "1081662488576"
+                os: Linux-5.15.0-152-generic-x86_64-with-glibc2.35
+                program: -m scripts.mid_train
+                python: CPython 3.10.12
+                root: /sgl-workspace/nanochat
+                startedAt: "2025-10-15T05:55:55.467052Z"
+                writerId: 8tfab1f8bfq1ahd40emgaiv6yzxkj90j
+        m: []
+        python_version: 3.10.12
+        t:
+            "1":
+                - 1
+                - 49
+                - 51
+            "2":
+                - 1
+                - 49
+                - 51
+            "3":
+                - 13
+                - 16
+            "4": 3.10.12
+            "5": 0.21.3
+            "12": 0.21.3
+            "13": linux-x86_64
+device_batch_size:
+    value: 32
+dtype:
+    value: bfloat16
+embedding_lr:
+    value: 0.2
+eval_every:
+    value: 150
+eval_tokens:
+    value: 10485760
+final_lr_frac:
+    value: 0
+init_lr_frac:
+    value: 1
+matrix_lr:
+    value: 0.02
+max_seq_len:
+    value: 2048
+run:
+    value: speedrun
+total_batch_size:
+    value: 524288
+unembedding_lr:
+    value: 0.004
+weight_decay:
+    value: 0
